@@ -10,7 +10,7 @@ public class Solution {
         if(hashArray.TryGetValue(atual, out var indiceAnterior)) {
             return [indiceAnterior, i];
         } 
-            hashArray.Add(nums[i], i);
+            hashArray.TryAdd(nums[i], i);
         }
         return nums;
     }
